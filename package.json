@@ -1,0 +1,26 @@
+{
+  "name": "gestion-droit-machines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarot/gestion-droit-machines.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmarot/gestion-droit-machines/issues"
+  },
+  "homepage": "https://github.com/pmarot/gestion-droit-machines#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "nodemon": "^1.17.5",
+    "objectid": "^3.2.1"
+  }
+}
