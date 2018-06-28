@@ -70,6 +70,28 @@ app.post('/add', function (req, res) {
     });
   });
 
+
+  // supprimer les utilisateurs
+
+  app.delete('/users/:id', function (req, res) {
+    const _id = req.params.id;
+  
+    MongoClient.connect(urlmongo, function (err, database) {
+      if (err) throw err;
+      var myquery = {
+        _id: mongodb.ObjectId(_id)
+      };
+      database.db("parc").collection("utilisateurs").deleteOne(myquery, function (err, obj) {
+        assert.equal(null, err);
+        if (err) throw err;
+       // console.log(obj);
+        database.close();
+      });
+    });
+      
+    res.end("id= " + _id + " supprimé");
+  });
+
 app.get('/liste_machines', function (req, res) {
     res.render("pages/liste_machines")
 });

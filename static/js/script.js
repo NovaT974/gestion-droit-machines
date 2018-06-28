@@ -10,6 +10,7 @@ $(document).ready(function() {
                 var info = "";
                 $('#utilisateurs').append('<ul class="list-group"><li class="list-group-item">Nom: ' + affichInfo[i].nom + '<p>Prenom: '  + affichInfo[i].prenom + ' </p></li></ul>'); 
         }; 
+        
         },
         error: function (resultat, statut, erreur) {
 
