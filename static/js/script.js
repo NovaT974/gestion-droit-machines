@@ -30,7 +30,7 @@ $(document).ready(function() {
             },
             success: function (data) {
                 console.log(data);
-                location.reload();
+                location.reload(forceGet);
             },
             error: function (e) {
                 console.error("erreur :", e);

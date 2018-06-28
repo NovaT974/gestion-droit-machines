@@ -25,7 +25,7 @@ app.get('/liste_utilisateurs', function (req, res) {
     res.render("pages/liste_utilisateurs")
 });
 
-//recupere la base de donnée
+//recupere la base de donnée utilisateurs
 
 app.get('/users', function (req, res) {
     MongoClient.connect(urlmongo, function (err, database) {
