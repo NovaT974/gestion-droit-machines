@@ -8,7 +8,7 @@ $(document).ready(function() {
             for (var i = 0; i < affichInfo.length; i++) {
                 console.log(affichInfo[i]);  
                 var info = "";
-                $('#utilisateurs').append('Nom: ' + affichInfo[i].nom + '<p>Prenom: '  + affichInfo[i].prenom + ' </p>'); 
+                $('#utilisateurs').append('<ul class="list-group"><li class="list-group-item">Nom: ' + affichInfo[i].nom + '<p>Prenom: '  + affichInfo[i].prenom + ' </p></li></ul>'); 
         }; 
         },
         error: function (resultat, statut, erreur) {
@@ -19,7 +19,7 @@ $(document).ready(function() {
     //
 
     $('#add').click(function () {
-        var nom = $('#nom').val();
+        var nom = $('#nom').val()
         var prenom = $('#prenom').val();
         $.ajax({
             url: 'http://localhost:3002/add',
